@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:paddingTop="7dp"
+        android:paddingBottom="7dp">
+
+
+
+
+
+
+        <TextView
+            android:id="@+id/toolbar_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:textSize="18sp"
+            android:text="User Name"
+
+            />
+
+
+
+
+        <TextView
+            android:id="@+id/tv_edit"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingRight="30dp"
+            android:paddingLeft="30dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/border_red"
+            android:textColor="@android:color/holo_red_dark"
+            android:text="Pay"/>
+
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:id="@+id/view2"
+        android:layout_below="@+id/toolbar"
+        android:background="@color/colorPrimaryDark"/>
+
+    <ScrollView
+        android:layout_below="@+id/view2"
+    android:layout_width="match_parent"
+    android:layout_marginBottom="50dp"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_margin="10dp"
+            android:orientation="vertical"
+            android:background="@drawable/border"
+            android:layout_height="200dp">
+
+            <TextView
+                android:layout_marginTop="2dp"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
+                android:text="ADMISSION FEE (2020-2021)"
+                android:gravity="center"
+                android:textSize="16dp"
+                android:textColor="@android:color/white"
+                android:layout_width="match_parent"
+                android:textStyle="bold"
+
+                android:background="@drawable/border_new"
+                android:layout_height="50dp"></TextView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:tint="@android:color/holo_red_dark"
+                    android:src="@mipmap/rupee"></ImageView>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="25dp"
+                    android:text="00.00"></TextView>
+
+
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_margin="10dp"
+            android:orientation="vertical"
+            android:background="@drawable/border_orange"
+            android:layout_height="200dp">
+
+            <TextView
+                android:layout_marginTop="2dp"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
+
+                android:text="ANNUAL FEE"
+                android:gravity="center"
+                android:textSize="16dp"
+                android:textColor="@android:color/white"
+                android:layout_width="match_parent"
+                android:textStyle="bold"
+
+                android:background="@drawable/border_new_orange"
+                android:layout_height="50dp"></TextView>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:tint="@android:color/holo_red_dark"
+                    android:src="@mipmap/rupee"></ImageView>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="25dp"
+                    android:text="00.00"></TextView>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_margin="10dp"
+            android:orientation="vertical"
+            android:background="@drawable/border_blue"
+            android:layout_height="200dp">
+
+            <TextView
+                android:layout_marginTop="2dp"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
+                android:text="TUITION FEE"
+                android:gravity="center"
+                android:textSize="16dp"
+                android:textColor="@android:color/white"
+                android:textStyle="bold"
+
+                android:layout_width="match_parent"
+
+                android:background="@drawable/border_new_blue"
+                android:layout_height="50dp"></TextView>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:orientation="vertical"
+                android:gravity="center">
+
+               <Spinner
+                   android:id="@+id/spinner1"
+                   style="@style/spinner_style1"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"></Spinner>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:tint="@android:color/holo_red_dark"
+                        android:src="@mipmap/rupee"></ImageView>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="25dp"
+                        android:text="00.00"></TextView>
+
+
+                </LinearLayout>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16dp"
+                    android:text="Late Fee Fine : 0.00(0 days)"></TextView>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_margin="10dp"
+            android:orientation="vertical"
+            android:background="@drawable/border_red"
+            android:layout_height="200dp">
+
+            <TextView
+                android:layout_marginTop="2dp"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
+                android:text="TRANSPORT FEE"
+                android:gravity="center"
+                android:textSize="16dp"
+                android:textColor="@android:color/white"
+                android:textStyle="bold"
+                android:layout_width="match_parent"
+                android:background="@drawable/border_new_red"
+                android:layout_height="50dp"></TextView>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:tint="@android:color/holo_red_dark"
+                    android:src="@mipmap/rupee"></ImageView>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="25dp"
+                    android:text="00.00"></TextView>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</ScrollView>
+<TextView
+    android:id="@+id/trsancation"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+   android:layout_alignParentBottom="true"
+     android:textColor="@android:color/white"
+    android:gravity="center"
+    android:onClick="trsancation"
+    android:padding="10dp"
+    android:background="@android:color/holo_red_dark"
+    android:textSize="25dp"
+    android:text="Transaction Report"></TextView>
+</RelativeLayout>

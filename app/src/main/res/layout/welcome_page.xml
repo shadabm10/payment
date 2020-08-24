@@ -1,0 +1,498 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+
+        android:background="@color/green">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Student name"
+            android:textSize="22dp"
+            android:textStyle="bold"
+
+            android:layout_marginLeft="20dp"
+            android:textColor="@android:color/white"
+          android:layout_marginTop="50dp"/>
+
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="100dp"
+        android:layout_marginBottom="100dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="10dp"
+            android:orientation="vertical"
+
+            >
+
+
+            <LinearLayout
+                android:id="@+id/ll_first_row"
+                android:layout_width="match_parent"
+                android:layout_height="220dp"
+                android:orientation="horizontal"
+                >
+
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:id="@+id/scan"
+                    app:cardElevation="5dp"
+                    app:cardCornerRadius="8dp"
+                    app:cardUseCompatPadding="true"
+                    >
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:button="@drawable/checkbox_selected"
+                        android:id="@+id/checkbox_ad"
+                             android:checked="true"
+
+                        android:textColor="@color/blue" />
+
+                    <LinearLayout
+                        android:layout_gravity="center_horizontal|center_vertical"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:src="@mipmap/admission"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_width="50dp"
+                            android:tint="@color/orange"
+                            android:layout_height="50dp" />
+
+                        <TextView
+                            android:text="Admission Fee"
+                            android:textAlignment="center"
+                            android:textColor="@android:color/black"
+                            android:textSize="12sp"
+                            android:textStyle="bold"
+                            android:layout_marginTop="10dp"
+                            android:layout_gravity="center"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:gravity="center">
+
+                            <ImageView
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:tint="@android:color/holo_red_dark"
+                                android:src="@mipmap/rupee"></ImageView>
+                            <TextView
+                                android:id="@+id/tv_admission_fee"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="20dp"
+                                ></TextView>
+                            <TextView
+                                android:id="@+id/tv_admission_fee_zero"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="20dp"
+                                android:visibility="gone"
+                                android:text="0"></TextView>
+
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/card_track_order"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    app:cardElevation="5dp"
+                    app:cardCornerRadius="8dp"
+                    app:cardUseCompatPadding="true"
+                    >
+                    <CheckBox
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:button="@drawable/checkbox_selected"
+                        android:id="@+id/check_bo1"
+                        android:checked="true"
+                        android:textColor="@color/blue" />
+
+                    <LinearLayout
+                        android:layout_gravity="center_horizontal|center_vertical"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:src="@mipmap/annual"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_width="50dp"
+                            android:tint="@color/orange"
+                            android:layout_height="50dp" />
+
+                        <TextView
+                            android:text="Annual Fee"
+                            android:textAlignment="center"
+                            android:textColor="@android:color/black"
+                            android:textSize="12sp"
+                            android:textStyle="bold"
+                            android:layout_marginTop="10dp"
+                            android:layout_gravity="center"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:gravity="center">
+
+                            <ImageView
+                                android:layout_width="14dp"
+                                android:layout_height="14dp"
+                                android:layout_gravity="center"
+                                android:tint="@android:color/holo_red_dark"
+                                android:src="@mipmap/rupee"></ImageView>
+                            <TextView
+                                android:id="@+id/tv_annual_fee"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="20dp"
+                                android:visibility="visible"
+                                android:gravity="center"
+                                android:layout_gravity="center"
+                                android:text="2222vb"></TextView>
+                            <TextView
+                                android:id="@+id/tv_annual_zero"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="20dp"
+                                android:visibility="gone"
+                                android:gravity="center"
+                                android:layout_gravity="center"
+                                android:text="0"></TextView>
+
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_second_row"
+                android:layout_width="match_parent"
+                android:layout_height="220dp"
+                android:layout_below="@+id/ll_first_row"
+                android:orientation="horizontal"
+                >
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/place_enquiry"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    app:cardElevation="5dp"
+                    app:cardCornerRadius="8dp"
+                    app:cardUseCompatPadding="true"
+                    >
+
+                    <LinearLayout
+                        android:layout_gravity="center_horizontal|center_vertical"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:src="@mipmap/tuition"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_width="50dp"
+                            android:tint="@color/orange"
+                            android:layout_height="50dp" />
+
+                        <TextView
+                            android:text="Tuition Fee"
+                            android:textAlignment="center"
+                            android:textColor="@android:color/black"
+                            android:textSize="12sp"
+                            android:layout_marginTop="10dp"
+                            android:layout_gravity="center"
+                            android:textStyle="bold"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:orientation="vertical"
+                            android:gravity="center">
+
+                            <Spinner
+                                android:id="@+id/spinner1"
+                                style="@style/spinner_style1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"></Spinner>
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center">
+
+                                <ImageView
+                                    android:layout_width="20dp"
+                                    android:layout_height="20dp"
+                                    android:tint="@android:color/holo_red_dark"
+                                    android:src="@mipmap/rupee"></ImageView>
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textSize="20dp"
+
+                                    android:id="@+id/tv_tuition"
+                                    android:text="00.00"></TextView>
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textSize="14dp"
+                                    android:id="@+id/tv_paid"
+                                    android:visibility="gone"
+                                    android:text="All Fee paid"></TextView>
+
+
+                            </LinearLayout>
+                            <TextView
+                                android:id="@+id/fine"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textSize="12dp"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                ></TextView>
+
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/card_contact_us"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    app:cardUseCompatPadding="true"
+                    app:cardElevation="5dp"
+                    app:cardCornerRadius="8dp"
+                    >
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:button="@drawable/checkbox_selected"
+                        android:id="@+id/checkbox12"
+                        android:checked="true"
+                        android:textColor="@color/blue" />
+
+                    <LinearLayout
+                        android:layout_gravity="center_horizontal|center_vertical"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:src="@mipmap/bus"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_width="50dp"
+                            android:tint="@color/orange"
+                            android:layout_height="50dp" />
+
+                        <TextView
+                            android:text="Transportation"
+                            android:textAlignment="center"
+                            android:textColor="@android:color/black"
+                            android:textSize="12sp"
+                            android:layout_marginTop="10dp"
+                            android:layout_gravity="center"
+                            android:textStyle="bold"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:orientation="vertical"
+                            android:gravity="center">
+
+                            <Spinner
+                                android:id="@+id/spinner2"
+                                style="@style/spinner_style1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"></Spinner>
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center">
+
+                                <ImageView
+                                    android:layout_width="20dp"
+                                    android:layout_height="20dp"
+                                    android:tint="@android:color/holo_red_dark"
+                                    android:src="@mipmap/rupee"></ImageView>
+                                <TextView
+                                    android:id="@+id/tv_transport"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textSize="20dp"
+                                    android:text="00.00"></TextView>
+                                <TextView
+                                    android:id="@+id/tv_transport_zero"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textSize="20dp"
+                                    android:visibility="gone"
+                                    android:text="0"></TextView>
+
+
+
+                            </LinearLayout>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="16dp"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:text=""></TextView>
+
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/total"
+                    android:layout_width="wrap_content"
+
+                    android:textColor="@color/blue"
+                    android:gravity="center"
+                    android:textSize="16dp"
+                    android:padding="10dp"
+                    android:text="Total Amount :"
+                    android:layout_height="wrap_content" />
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:background="@drawable/border_blue"
+                    >
+
+                    <ImageView
+                        android:layout_width="23dp"
+                        android:layout_height="23dp"
+                        android:layout_gravity="center"
+                        android:tint="@android:color/holo_red_dark"
+                        android:src="@mipmap/rupee"></ImageView>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="20dp"
+                        android:id="@+id/tv_total"
+
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="00.00"></TextView>
+
+
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+      android:layout_alignParentBottom="true"
+        android:weightSum="1"
+        android:background="@color/green">
+
+    <TextView
+        android:id="@+id/trsancation"
+        android:layout_width="0dp"
+        android:layout_weight="0.5"
+        android:layout_gravity="center"
+        android:textColor="@android:color/white"
+        android:gravity="center"
+        android:onClick="trsancation"
+        android:textSize="20dp"
+        android:padding="10dp"
+        android:text="Transaction Report"
+        android:layout_height="wrap_content" />
+        <View
+            android:layout_width="2dp"
+            android:background="@color/orange"
+            android:layout_height="match_parent">
+        </View>
+
+    <TextView
+        android:id="@+id/pay"
+        android:layout_width="0dp"
+        android:layout_weight="0.5"
+        android:textSize="20dp"
+        android:layout_gravity="center"
+        android:padding="10dp"
+        android:gravity="center"
+        android:textColor="@android:color/white"
+
+        android:layout_height="wrap_content" />
+    </LinearLayout>
+
+
+</RelativeLayout>

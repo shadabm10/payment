@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/ll_mian"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:gravity="center">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:textStyle="bold"
+
+            android:text="Transaction Report"></TextView>
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:id="@+id/view1"
+        android:layout_below="@id/ll_mian"
+        android:background="@color/green"/>
+
+<LinearLayout
+    android:id="@+id/llnew"
+    android:layout_marginTop="20dp"
+    android:layout_below="@id/view1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:orientation="horizontal"
+        android:gravity="center">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            android:textColor="@color/green"
+            android:text="Status"></TextView>
+
+
+        <Spinner
+            android:id="@+id/spinner1"
+            style="@style/spinner_style1"
+            android:visibility="visible"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"></Spinner>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16dp"
+            android:visibility="gone"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:background="@drawable/border_blue"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"
+            android:text="Show"></TextView>
+
+    </LinearLayout>
+
+</LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_last"
+        android:layout_below="@id/llnew"
+        android:layout_marginLeft="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Last Transaction"></TextView>
+
+
+
+    <androidx.recyclerview.widget.RecyclerView
+    android:id="@+id/recycler"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/tv_last"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+        android:visibility="gone"
+    ></androidx.recyclerview.widget.RecyclerView>
+    <androidx.recyclerview.widget.RecyclerView
+    android:id="@+id/recycler1"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/tv_last"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+        android:visibility="gone"
+    ></androidx.recyclerview.widget.RecyclerView>
+    <TextView
+        android:id="@+id/tv_no_tras"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="No Transaction Till date"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:layout_below="@+id/view2"
+              android:visibility="gone"
+        android:padding="5dp"
+        android:textColor="@color/dark_grey"
+        android:layout_weight="0.95"
+
+        />
+
+</RelativeLayout>

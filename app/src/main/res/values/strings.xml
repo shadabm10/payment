@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">PaymentGateway</string>
+    <string name="Multiline_Text_By_N">
+        AUG 23 \n12:23 AM
+    </string>
+    <string name="Multiline_Text_By_NN">
+        KOLKATA METRO FASHION \nBill Pay
+    </string>
+    <string name="Multiline_Amount">
+        -$444
+    </string>
+    <string name="Rs">\u20B9</string></resources>
